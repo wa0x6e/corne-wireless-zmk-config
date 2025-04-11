@@ -67,19 +67,19 @@
 
         combo_cut {
             timeout-ms = <50>;
-            key-positions = <30 32>;
+            key-positions = <25 27>;
             bindings = <&kp LG(X)>;
         };
 
         combo_copy {
             timeout-ms = <50>;
-            key-positions = <30 31>;
+            key-positions = <26 25>;
             bindings = <&kp LG(C)>;
         };
 
         combo_paste {
             timeout-ms = <50>;
-            key-positions = <31 32>;
+            key-positions = <27 28>;
             bindings = <&kp LG(V)>;
         };
 
@@ -96,37 +96,37 @@
 
         combo_backspace {
             timeout-ms = <50>;
-            key-positions = <8 9>;
+            key-positions = <8 7>;
             bindings = <&kp BSPC>;
         };
 
         combo_delete {
             timeout-ms = <50>;
-            key-positions = <9 10>;
+            key-positions = <9 8>;
             bindings = <&kp DEL>;
         };
 
         combo_escape {
             timeout-ms = <50>;
-            key-positions = <8 10>;
+            key-positions = <7 9>;
             bindings = <&kp ESC>;
         };
 
         combo_enter {
             timeout-ms = <50>;
-            key-positions = <37 38>;
+            key-positions = <31 32>;
             bindings = <&kp ENTER>;
         };
 
         combo_tab {
             timeout-ms = <50>;
-            key-positions = <38 39>;
+            key-positions = <32 33>;
             bindings = <&kp TAB>;
         };
 
         combo_cmd_enter {
             bindings = <&kp LG(ENTER)>;
-            key-positions = <37 39>;
+            key-positions = <31 33>;
         };
     };
 
@@ -156,62 +156,61 @@
         default_layer {
             display-name = "COLMAK";
             bindings = <
-&kp ESCAPE     &kp Q        &kp W       &kp F                           &kp P         &kp B                                                               &kp J            &kp L         &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
-&kp LA(COMMA)  &hm LCTRL A  &hm LALT R  &hm LGUI S                      &hm LSHIFT T  &kp G                                       &kp M            &hm LSHIFT N  &hm LGUI E        &hm LALT I  &hm LCTRL O       &kp MINUS
-&td0           &kp Z        &kp X       &kp C                           &kp D         &kp V                                          &kp K            &kp H         &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
-                                        &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 2         &mt LEFT_SHIFT SPACE                                                      &lt 3 BACKSPACE  &sl 1         &sl 4
+&kp ESCAPE     &kp Q        &kp W       &kp F                           &kp P         &kp B                   &kp J            &kp L         &kp U             &kp Y       &kp SINGLE_QUOTE  &kp GRAVE
+&kp LA(COMMA)  &hm LCTRL A  &hm LALT R  &hm LGUI S                      &hm LSHIFT T  &kp G                   &kp M            &hm LSHIFT N  &hm LGUI E        &hm LALT I  &hm LCTRL O       &kp MINUS
+&td0           &kp Z        &kp X       &kp C                           &kp D         &kp V                   &kp K            &kp H         &comma_semicolon  &dot_colon  &excl_quest       &mt SLASH EQUAL
+                                        &sk LS(LA(LC(LG(LEFT_SHIFT))))  &sl 2         &mt LEFT_SHIFT SPACE    &lt 3 BACKSPACE  &sl 1         &sl 4
             >;
         };
 
         layer_num {
             display-name = "NUMBER";
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans                                                     &trans  &kp N7  &kp N8  &kp N9  &kp COMMA   &kp ASTRK
-&trans  &trans  &trans  &trans  &trans  &trans                &trans  &kp N4  &kp N5  &kp N6  &kp N0      &trans
-&trans  &trans  &trans  &trans  &trans  &trans                                     &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
-                        &trans  &trans  &trans                                                                 &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp COMMA   &kp ASTRK
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp PERIOD  &trans
+                        &trans  &trans  &trans    &trans  &trans  &trans
             >;
         };
 
         layer_sym {
             display-name = "SYMBOL";
             bindings = <
-&trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT                                                 &trans  &kp PIPE               &kp BACKSLASH    &kp LPAR           &kp RPAR          &trans
-&trans  &kp CARET  &kp AMPS  &kp ASTRK  &trans    &trans                 &trans  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LESS_THAN     &trans
-&trans  &trans     &trans    &trans     &trans    &trans                                          &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
-                             &trans     &trans    &trans                                                                &trans  &trans                 &trans
+&trans  &kp EXCL   &kp AT    &kp HASH   &kp DLLR  &kp PRCNT    &trans  &kp PIPE               &kp BACKSLASH    &kp LPAR           &kp RPAR          &trans
+&trans  &kp CARET  &kp AMPS  &kp ASTRK  &trans    &trans       &trans  &kp LEFT_PARENTHESIS   &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LESS_THAN     &trans
+&trans  &trans     &trans    &trans     &trans    &trans       &trans  &kp RIGHT_PARENTHESIS  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp GREATER_THAN  &trans
+                             &trans     &trans    &trans       &trans  &trans                 &trans
             >;
         };
 
         layer_nav {
             display-name = "NAV";
             bindings = <
-&trans  &trans  &trans         &kp LG(LS(ENTER))  &trans                 &trans                                               &trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans          &trans
-&trans  &none   &kp LG(LS(K))  &clear_line        &kp LS(LG(LC(RIGHT)))  &trans                 &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
-&trans  &trans  &trans         &kp LG(ENTER)      &kp LS(LC(LG(LEFT)))   &trans                                     &kp END   &kp LA(LEFT)        &none         &kp LA(RIGHT)  &msc SCRL_DOWN  &kp PG_DN
-                               &trans             &trans                 &trans                                                                 &trans    &trans              &trans
+&trans  &trans  &trans         &kp LG(LS(ENTER))  &trans                 &trans    &trans    &kp LG(LEFT_ARROW)  &kp UP_ARROW  &kp LG(RIGHT)  &trans          &trans
+&trans  &none   &kp LG(LS(K))  &clear_line        &kp LS(LG(LC(RIGHT)))  &trans    &kp HOME  &kp LEFT            &kp DOWN      &kp RIGHT      &msc SCRL_UP    &kp PG_UP
+&trans  &trans  &trans         &kp LG(ENTER)      &kp LS(LC(LG(LEFT)))   &trans    &kp END   &kp LA(LEFT)        &none         &kp LA(RIGHT)  &msc SCRL_DOWN  &kp PG_DN
+                               &trans             &trans                 &trans    &trans    &trans              &trans
             >;
         };
 
         layer_fn {
             display-name = "FN";
             bindings = <
-&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5                                                     &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
-&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4                  &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
-&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5                                     &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
-                                       &trans       &trans     &trans                                                                   &trans       &trans     &trans
+&studio_unlock  &kp F1      &kp F2     &kp F3       &kp F4     &kp F5      &kp F6       &kp F7     &kp F8       &kp F9      &kp F10          &kp F11
+&trans          &trans      &mkp LCLK  &mkp MCLK    &mkp RCLK  &mkp MB4    &bootloader  &mkp LCLK  &mkp MCLK    &mkp RCLK   &kp PRINTSCREEN  &kp F12
+&trans          &sys_reset  &trans     &bootloader  &trans     &mkp MB5    &trans       &trans     &bootloader  &sys_reset  &kp SCROLLLOCK   &kp PAUSE_BREAK
+                                       &trans       &trans     &trans      &trans       &trans     &trans
             >;
         };
 
         layer_qwerty {
             display-name = "QWERTY";
             bindings = <
-&kp TAB    &kp Q        &kp W       &kp E       &kp R         &kp T                                               &kp Y   &kp U         &kp I       &kp O       &kp P           &kp BSPC
-&td0       &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHIFT F  &kp G                        &kp H   &hm LSHIFT J  &hm LGUI K  &hm LALT L  &hm LCTRL SEMI  &kp SQT
-&kp LCTRL  &kp Z        &kp X       &kp C       &kp V         &kp B                             &kp N   &kp M         &kp COMMA   &kp DOT     &kp FSLH        &kp ESC
-                                    &trans      &trans        &trans                                                      &trans  &trans        &trans
+&kp TAB    &kp Q        &kp W       &kp E       &kp R         &kp T     &kp Y   &kp U         &kp I       &kp O       &kp P           &kp BSPC
+&td0       &hm LCTRL A  &hm LALT S  &hm LGUI D  &hm LSHIFT F  &kp G     &kp H   &hm LSHIFT J  &hm LGUI K  &hm LALT L  &hm LCTRL SEMI  &kp SQT
+&kp LCTRL  &kp Z        &kp X       &kp C       &kp V         &kp B     &kp N   &kp M         &kp COMMA   &kp DOT     &kp FSLH        &kp ESC
+                                    &trans      &trans        &trans    &trans  &trans        &trans
             >;
         };
     };
-
 };
