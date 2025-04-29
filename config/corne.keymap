@@ -128,6 +128,11 @@
             bindings = <&kp LG(ENTER)>;
             key-positions = <31 33>;
         };
+
+        vscode-cmd-palettet {
+            bindings = <&kp LS(LG(P))>;
+            key-positions = <16 19>;
+        };
     };
 
     macros {
